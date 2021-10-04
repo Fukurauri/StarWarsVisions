@@ -14,11 +14,12 @@
 #pragma multi_compile _ LIGHTMAP_SHADOW_MIXING
 #endif
 
-void MainLight_float(float3 WorldPos, out float3 Direction, out float3 Color, out float ShadowAtten)
+void MainLight_float(float3 WorldPos, out float3 Direction, out float3 Color, out float DistanceAtten, out float ShadowAtten)
 {
 #if defined(SHADERGRAPH_PREVIEW)
 	Direction = float3(0.5, 0.5, 0);
 	Color = 1;
+	DistanceAtten = 1;
 	ShadowAtten = 1;
 #else
 	float4 shadowCoord = TransformWorldToShadowCoord(WorldPos);
@@ -26,6 +27,7 @@ void MainLight_float(float3 WorldPos, out float3 Direction, out float3 Color, ou
 	Light mainLight = GetMainLight(shadowCoord);
 	Direction = mainLight.direction;
 	Color = mainLight.color;
+	DistanceAtten = mainLight.distanceAttenuation;
 
 #if !defined(_MAIN_LIGHT_SHADOWS) || defined(_RECEIVE_SHADOWS_OFF)
 	ShadowAtten = 1.0h;
@@ -54,7 +56,7 @@ void DirectSpecular_float(float Smoothness, float3 Direction, float3 WorldNormal
 #endif
 }
 
-void AdditionalLights_float(float Smoothness, float3 WorldPosition, float3 WorldNormal, float3 WorldView, out float3 Diffuse, out float3 Specular)
+void AdditionalLights_float(float3 SpecColor, float Smoothness, float3 WorldPosition, float3 WorldNormal, float3 WorldView, out float3 Diffuse, out float3 Specular)
 {
 	float3 diffuseColor = 0;
 	float3 specularColor = 0;

@@ -1,0 +1,94 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Ink Lit
+  m_Shader: {fileID: -6465566751694194690, guid: 0d64a9f4215fe4e48a656a4987941412, type: 3}
+  m_ShaderKeywords: BOOLEAN_94E6730C6FC34576A5FF924919C4CA35_ON
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - Texture2D_1a15ce880fe246a58ea649318f2eca77:
+        m_Texture: {fileID: 2800000, guid: e37efaa38d1fc1344a0bd0051a741df7, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Texture2D_42b0402fef6e4fb4a75f1742a9f95319:
+        m_Texture: {fileID: 2800000, guid: 06551a7c312d37648aade52a370cfa21, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Texture2D_7d64208eb4844ee484af19eee90c22c4:
+        m_Texture: {fileID: 2800000, guid: 06969fc081d8cc146af6634f75abe652, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Texture2D_88c77e64463f4bd594d07c38269530bb:
+        m_Texture: {fileID: 2800000, guid: b3f247b26e080ca468f1daa963c192ee, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Texture2D_e364642161d04a44ae7421f5d22ae841:
+        m_Texture: {fileID: 2800000, guid: 08d52712f4c5ed74cb20d68ae265115d, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SampleTexture2DLOD_1c6b41d785f8437bbbde7715c9ca3ce2_Texture_1:
+        m_Texture: {fileID: 2800000, guid: 0c90848f17b795f4584adc3e10e169fb, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SampleTexture2DLOD_d59b8083d3364fb3911f099ccc4770dd_Texture_1:
+        m_Texture: {fileID: 2800000, guid: 487fb7a88be03c24aba1474c31a0ad3a, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Texture2DAsset_11161c56f38d4c35b237c5d12e0c0ed9_Out_0:
+        m_Texture: {fileID: 2800000, guid: e37efaa38d1fc1344a0bd0051a741df7, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Texture2DAsset_24bc78ed312745b181f5f4ecc298a873_Out_0:
+        m_Texture: {fileID: 2800000, guid: 06969fc081d8cc146af6634f75abe652, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Texture2DAsset_3dd0c191a99e448b9c7faa7c434eaa1c_Out_0:
+        m_Texture: {fileID: 2800000, guid: 06551a7c312d37648aade52a370cfa21, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Texture2DAsset_48a03b3ff46c4a9abcd918be69ed20b1_Out_0:
+        m_Texture: {fileID: 2800000, guid: 06551a7c312d37648aade52a370cfa21, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Texture2DAsset_5ca527bffbe24b2299a683e9662b49c8_Out_0:
+        m_Texture: {fileID: 2800000, guid: 08d52712f4c5ed74cb20d68ae265115d, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Texture2DAsset_cfa80bc32dc6429bb3f4fc7008bbeaed_Out_0:
+        m_Texture: {fileID: 2800000, guid: 06969fc081d8cc146af6634f75abe652, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_Lightmaps:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_LightmapsInd:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_ShadowMasks:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - BOOLEAN_94E6730C6FC34576A5FF924919C4CA35: 1
+    - Vector1_4cf58699ca0a4115bea9a0ab4abee9a7: 2
+    - Vector1_69eb6f1ca9964d7a8106aa880f242496: 0.25
+    - Vector1_adf73720cb5d4d5b9aefb4d1d141fa26: 0.5
+    - Vector1_cd33624e84de439e9dbbadbee56739d8: 2
+    m_Colors:
+    - Vector4_757d549be59942b087e8ec98ea215d80: {r: 1, g: 1, b: 1, a: 0}
+  m_BuildTextureStacks: []

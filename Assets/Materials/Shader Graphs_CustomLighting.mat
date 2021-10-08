@@ -9,7 +9,7 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: Shader Graphs_CustomLighting
   m_Shader: {fileID: -6465566751694194690, guid: 2111740cc5fb3e84086861493664e341, type: 3}
-  m_ShaderKeywords: 
+  m_ShaderKeywords: BOOLEAN_92B710EE2A68404EA9B5CE3D99598441_ON
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -19,6 +19,18 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
+    - _SampleTexture2DLOD_0e06f8dbe89144ce9305a6a61512dff7_Texture_1:
+        m_Texture: {fileID: 2800000, guid: fab85e0cacda9644a99e5182a86b71f5, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_29e9d9ca03a64e6384e54caaa2608dfd_Texture_1:
+        m_Texture: {fileID: 2800000, guid: fab85e0cacda9644a99e5182a86b71f5, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_bcf74b1753eb49c5980589498081bdf0_Texture_1:
+        m_Texture: {fileID: 2800000, guid: 3e11968c372730442aae3b4f7c909931, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - unity_Lightmaps:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -31,6 +43,14 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    m_Floats: []
-    m_Colors: []
+    m_Floats:
+    - BOOLEAN_92B710EE2A68404EA9B5CE3D99598441: 1
+    - BOOLEAN_BB8ABCEFD8534732AFB24D3BDA2693E8: 1
+    - Vector1_09bb05ef12414bf8ac67850037d5efe1: 0.93
+    - Vector1_0bc153b0aa254248a8048f2d8c4c862d: 1
+    - Vector1_f17bad06d4e94aa7a304f7d945fea421: 1
+    - _RimStrenght: 0.001
+    - _RimStrength: 0.001
+    m_Colors:
+    - Vector4_539bc97170f945e79c123c55a263c620: {r: 1, g: 1, b: 1, a: 0}
   m_BuildTextureStacks: []

@@ -65,12 +65,14 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Floats:
     - BOOLEAN_94E6730C6FC34576A5FF924919C4CA35: 1
+    - BOOLEAN_9864D523E4CD435493BCF169C18BBB50: 0
     - Vector1_12ab5088ba0343a7bbe0fb8f657ee7c9: 2
     - Vector1_15fdc07540eb4c70be658bce3e8e197e: 5.3
     - Vector1_4cf58699ca0a4115bea9a0ab4abee9a7: 2
     - Vector1_63b26342f6e64838a8f4b6e193b27a7d: 0.378
     - Vector1_69eb6f1ca9964d7a8106aa880f242496: 0.275
     - Vector1_785ec3e944dc404bb78b2bb9dd22f12e: 100
+    - Vector1_8476f5e1b1f747798fdbe0ee78773766: 2
     - Vector1_8846870a86624979b816af5a40c101bc: 200
     - Vector1_adf73720cb5d4d5b9aefb4d1d141fa26: 0.5
     - Vector1_c550626b22024cfcaebe1c030f311550: 3.06

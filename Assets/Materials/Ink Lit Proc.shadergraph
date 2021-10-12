@@ -16801,7 +16801,7 @@
             "x": 0.0,
             "y": 0.0,
             "z": 0.0,
-            "w": 0.0470588244497776
+            "w": 0.0117647061124444
         },
         {
             "x": 0.4528301954269409,
@@ -18192,7 +18192,7 @@
     ],
     "synonyms": [],
     "m_Precision": 0,
-    "m_PreviewExpanded": false,
+    "m_PreviewExpanded": true,
     "m_PreviewMode": 0,
     "m_CustomColors": {
         "m_SerializableColors": []

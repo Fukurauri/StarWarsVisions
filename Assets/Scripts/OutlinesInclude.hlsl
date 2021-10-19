@@ -12,38 +12,11 @@ TEXTURE2D(_DepthNormalsTexture); SAMPLER(sampler_DepthNormalsTexture);
 // Higher values mean the algorithm detected more of an edge
 
 // These are points to sample relative to the starting point
-static float2 sobelSamplePoints[9] = {
-	float2(-1, 1), float2(0, 1), float2(1, 1),
-	float2(-1, 0), float2(0, 0), float2(1, 0),
-	float2(-1, -1), float2(0, -1), float2(1, -1),
+static float2 sobelSamplePoints[4] = {
+	float2(-1, 1), float2(1, 1), float2(-1, -1), float2(1, -1),
 };
 
-// Weights for the x component
-static float sobelXMatrix[9] = {
-	1, 0, -1,
-	2, 0, -2,
-	1, 0, -1
-};
 
-// Weights for the y component
-static float sobelYMatrix[9] = {
-	1, 2, 1,
-	0, 0, 0,
-	-1, -2, -1
-};
-
-// This function runs the sobel algorithm over the depth texture
-void DepthSobel_float(float2 UV, float Thickness, out float Out) {
-	float2 sobel = 0;
-	// We can unroll this loop to make it more efficient
-	// The compiler is also smart enough to remove the i=4 iteration, which is always zero
-	[unroll] for (int i = 0; i < 9; i++) {
-		float depth = SHADERGRAPH_SAMPLE_SCENE_DEPTH(UV + sobelSamplePoints[i] * Thickness);
-		sobel += depth * float2(sobelXMatrix[i], sobelYMatrix[i]);
-	}
-	// Get the final sobel value
-	Out = length(sobel);
-}
 
 // Sample the depth normal map and decode depth and normal from the texture
 void GetDepthAndNormal(float2 uv, out float depth, out float3 normal) {
@@ -58,27 +31,30 @@ void CalculateDepthNormal_float(float2 UV, out float Depth, out float3 Normal) {
 	Normal = Normal * 2 - 1;
 }
 
-void NormalsSobel_float(float2 UV, float Thickness, out float Out) {
+void NormalsAndDepthSobel_float(float2 UV, float Thickness, out float Normals, out float Depth) {
 	// We have to run the sobel algorithm over the XYZ channels separately, like color
 	float2 sobelX = 0;
 	float2 sobelY = 0;
 	float2 sobelZ = 0;
+	float2 sobelDepth = 0;
 	// We can unroll this loop to make it more efficient
 	// The compiler is also smart enough to remove the i=4 iteration, which is always zero
-	[unroll] for (int i = 0; i < 9; i++) {
+	[unroll] for (int i = 0; i < 4; i++) {
 		float depth;
 		float3 normal;
 		GetDepthAndNormal(UV + sobelSamplePoints[i] * Thickness, depth, normal);
 		// Create the kernel for this iteration
-		float2 kernel = float2(sobelXMatrix[i], sobelYMatrix[i]);
+		float2 kernel = sobelSamplePoints[i];
 		// Accumulate samples for each coordinate
 		sobelX += normal.x * kernel;
 		sobelY += normal.y * kernel;
 		sobelZ += normal.z * kernel;
+		sobelDepth += depth * kernel;
 	}
 	// Get the final sobel value
 	// Combine the XYZ values by taking the one with the largest sobel value
-	Out = max(length(sobelX), max(length(sobelY), length(sobelZ)));
+	Normals = max(length(sobelX), max(length(sobelY), length(sobelZ)));
+	Depth = length(sobelDepth);
 }
 
 void ViewDirectionFromScreenUV_float(float2 In, out float3 Out) {

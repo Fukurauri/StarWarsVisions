@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: CustomUniversalRenderPipelineAsset_Renderer
   m_EditorClassIdentifier: 
   m_RendererFeatures:
-  - {fileID: 1945878939856660053}
-  m_RendererFeatureMap: 55e6110a9626011b
+  - {fileID: 8208909909795601088}
+  m_RendererFeatureMap: c0fa8cfe11e8eb71
   postProcessData: {fileID: 11400000, guid: 41439944d30ece34e96484bdb6645b55, type: 2}
   xrSystemData: {fileID: 11400000, guid: 60e1133243b97e347b653163a8c01b64, type: 2}
   shaders:
@@ -43,7 +43,7 @@ MonoBehaviour:
   m_ShadowTransparentReceive: 1
   m_RenderingMode: 0
   m_AccurateGbufferNormals: 0
---- !u!114 &1945878939856660053
+--- !u!114 &8208909909795601088
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -53,6 +53,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8c2b7a97ba8f2244a900f2dd9c5b4de2, type: 3}
-  m_Name: DepthNormals
+  m_Name: DepthNormalsFeature
   m_EditorClassIdentifier: 
   m_Active: 1

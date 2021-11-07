@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Ink Lit Proc
+  m_Name: SceneTasse
   m_Shader: {fileID: -6465566751694194690, guid: 0f817dfca6feb9046aae324c3b3adaf6, type: 3}
   m_ShaderKeywords: BOOLEAN_94E6730C6FC34576A5FF924919C4CA35_ON
   m_LightmapFlags: 4
@@ -66,7 +66,7 @@ Material:
     m_Floats:
     - BOOLEAN_94E6730C6FC34576A5FF924919C4CA35: 1
     - BOOLEAN_9864D523E4CD435493BCF169C18BBB50: 0
-    - Vector1_12ab5088ba0343a7bbe0fb8f657ee7c9: 2
+    - Vector1_12ab5088ba0343a7bbe0fb8f657ee7c9: 0.51
     - Vector1_15fdc07540eb4c70be658bce3e8e197e: 5.3
     - Vector1_4cf58699ca0a4115bea9a0ab4abee9a7: 2
     - Vector1_63b26342f6e64838a8f4b6e193b27a7d: 0.629

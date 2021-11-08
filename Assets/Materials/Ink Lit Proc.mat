@@ -19,6 +19,10 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
+    - Texture2D_094309993166483b9ba35a60bedeb367:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - Texture2D_1a15ce880fe246a58ea649318f2eca77:
         m_Texture: {fileID: 2800000, guid: e37efaa38d1fc1344a0bd0051a741df7, type: 3}
         m_Scale: {x: 1, y: 1}
@@ -33,6 +37,10 @@ Material:
         m_Offset: {x: 0, y: 0}
     - Texture2D_88c77e64463f4bd594d07c38269530bb:
         m_Texture: {fileID: 2800000, guid: b3f247b26e080ca468f1daa963c192ee, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Texture2D_a14307bbff4b4335b4d06055fc16fb3b:
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - Texture2D_e364642161d04a44ae7421f5d22ae841:
@@ -64,23 +72,27 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
+    - BOOLEAN_096FE174AC04409EA954683FE3D07093: 0
     - BOOLEAN_94E6730C6FC34576A5FF924919C4CA35: 1
+    - BOOLEAN_980FEA6207504CDBBE36CA6C9AE2D161: 0
     - BOOLEAN_9864D523E4CD435493BCF169C18BBB50: 0
-    - Vector1_12ab5088ba0343a7bbe0fb8f657ee7c9: 2
+    - Vector1_12ab5088ba0343a7bbe0fb8f657ee7c9: 4
     - Vector1_15fdc07540eb4c70be658bce3e8e197e: 5.3
     - Vector1_4cf58699ca0a4115bea9a0ab4abee9a7: 2
     - Vector1_63b26342f6e64838a8f4b6e193b27a7d: 0.629
-    - Vector1_688861A9: 1.5
-    - Vector1_69eb6f1ca9964d7a8106aa880f242496: 0.275
+    - Vector1_688861A9: 2
+    - Vector1_69eb6f1ca9964d7a8106aa880f242496: 0.4
     - Vector1_785ec3e944dc404bb78b2bb9dd22f12e: 100
     - Vector1_8476f5e1b1f747798fdbe0ee78773766: 2
     - Vector1_8846870a86624979b816af5a40c101bc: 200
-    - Vector1_903A7FAB: 2
+    - Vector1_903A7FAB: 3
     - Vector1_E39B1B65: 1
     - Vector1_adf73720cb5d4d5b9aefb4d1d141fa26: 0.5
     - Vector1_c550626b22024cfcaebe1c030f311550: 3.06
     - Vector1_cd33624e84de439e9dbbadbee56739d8: 2
+    - Vector1_ef2e777a23d84ee08b3fc316ffcad009: 1
     m_Colors:
+    - Color_37162c47ab554084997c42a920007115: {r: 0.6981132, g: 0.6981132, b: 0.6981132, a: 1}
     - Color_ed21d1088f5f4a4d83d09faf292a7a02: {r: 0, g: 0, b: 0, a: 0}
     - Vector4_757d549be59942b087e8ec98ea215d80: {r: 1, g: 1, b: 1, a: 0}
   m_BuildTextureStacks: []

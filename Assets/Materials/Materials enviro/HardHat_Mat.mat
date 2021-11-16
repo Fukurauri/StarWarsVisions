@@ -98,17 +98,18 @@ Material:
     - BOOLEAN_94E6730C6FC34576A5FF924919C4CA35: 1
     - BOOLEAN_980FEA6207504CDBBE36CA6C9AE2D161: 1
     - BOOLEAN_9864D523E4CD435493BCF169C18BBB50: 1
-    - Vector1_0bf06800e92644c8a9c19faf16ab8165: 3
+    - Vector1_0bf06800e92644c8a9c19faf16ab8165: 5
     - Vector1_12ab5088ba0343a7bbe0fb8f657ee7c9: 1.5
     - Vector1_15fdc07540eb4c70be658bce3e8e197e: 45
-    - Vector1_63b26342f6e64838a8f4b6e193b27a7d: 0.5
-    - Vector1_688861A9: 2
-    - Vector1_69eb6f1ca9964d7a8106aa880f242496: 0.25
-    - Vector1_785ec3e944dc404bb78b2bb9dd22f12e: 21.97
+    - Vector1_63b26342f6e64838a8f4b6e193b27a7d: 0.133
+    - Vector1_688861A9: 2.6
+    - Vector1_69eb6f1ca9964d7a8106aa880f242496: 0.5
+    - Vector1_785ec3e944dc404bb78b2bb9dd22f12e: 125
+    - Vector1_79fe9f56c361436c93b9ebff786ab642: 0.3
     - Vector1_8476f5e1b1f747798fdbe0ee78773766: 2
     - Vector1_870cd5d8dd5a407a8a621a681303639a: 0.7
-    - Vector1_8846870a86624979b816af5a40c101bc: 15
-    - Vector1_903A7FAB: 1
+    - Vector1_8846870a86624979b816af5a40c101bc: 25
+    - Vector1_903A7FAB: 1.15
     - Vector1_E39B1B65: 1
     - Vector1_adf73720cb5d4d5b9aefb4d1d141fa26: 0.5
     - Vector1_c550626b22024cfcaebe1c030f311550: 0

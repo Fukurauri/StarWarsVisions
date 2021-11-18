@@ -356,7 +356,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_BoundingSphereOverride: {x: 4.5905e-41, y: 0, z: 0, w: 1.8966287e+31}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -369,7 +369,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 515963960}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.447, y: 1.087, z: 0.869}
+  m_LocalPosition: {x: 2.5, y: 1.087, z: 1.098}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -823,6 +823,10 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 0.9529412
       objectReference: {fileID: 0}
+    - target: {fileID: 4409771049128859163, guid: bf0a225a9ff184f2789f3036faaa9150, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4410402899750998667, guid: bf0a225a9ff184f2789f3036faaa9150, type: 3}
       propertyPath: m_Name
       value: Construction Light Low (1)
@@ -932,11 +936,11 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: 404ae2fd2302c0844be0a104d0b34425, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 77a05c6d234e4f64bb189e099f6a2bc6, type: 2}
+      objectReference: {fileID: 2100000, guid: 3b4f613ad60a0cd4bad6b8ada7ae2241, type: 2}
     - target: {fileID: -7511558181221131132, guid: 404ae2fd2302c0844be0a104d0b34425, type: 3}
       propertyPath: m_Materials.Array.data[1]
       value: 
-      objectReference: {fileID: 2100000, guid: 77a05c6d234e4f64bb189e099f6a2bc6, type: 2}
+      objectReference: {fileID: 2100000, guid: 3b4f613ad60a0cd4bad6b8ada7ae2241, type: 2}
     - target: {fileID: 919132149155446097, guid: 404ae2fd2302c0844be0a104d0b34425, type: 3}
       propertyPath: m_Name
       value: S_Mannequin (1)

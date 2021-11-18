@@ -18,8 +18,8 @@ float3 DecodeNormal(float4 enc)
 
 void OutlineObject_float(float2 UV, float OutlineThickness, float DepthSensitivity, float NormalsSensitivity, out float Out)
 {
-	float halfScaleFloor = floor(OutlineThickness * 0.5);
-	float halfScaleCeil = ceil(OutlineThickness * 0.5);
+	float halfScaleFloor = floor(OutlineThickness * 0.5); //These two values will alternatively increment by one as OutlineThickness increases. By scaling our UVs this way, 
+	float halfScaleCeil = ceil(OutlineThickness * 0.5); //we are able to increment our edge width exactly one pixel at a time—achieving a maximum possible granularity—while still keeping the coordinates centred around UV.
 
 	float2 uvSamples[4];
 	float depthSamples[4];
@@ -32,14 +32,14 @@ void OutlineObject_float(float2 UV, float OutlineThickness, float DepthSensitivi
 
 	for (int i = 0; i < 4; i++)
 	{
-		depthSamples[i] = SAMPLE_TEXTURE2D(_CameraDepthTexture, sampler_CameraDepthTexture, uvSamples[i]).r;
+		depthSamples[i] = SAMPLE_TEXTURE2D(_CameraDepthTexture, sampler_CameraDepthTexture, uvSamples[i]).r; // sample the depth texture using our four UV coordinates.
 		normalSamples[i] = DecodeNormal(SAMPLE_TEXTURE2D(_CameraDepthNormalsTexture, sampler_CameraDepthNormalsTexture, uvSamples[i]));
 	}
 
 	// Depth
 	float depthFiniteDifference0 = depthSamples[1] - depthSamples[0];
 	float depthFiniteDifference1 = depthSamples[3] - depthSamples[2];
-	float edgeDepth = sqrt(pow(depthFiniteDifference0, 2) + pow(depthFiniteDifference1, 2)) * 100;
+	float edgeDepth = sqrt(pow(depthFiniteDifference0, 2) + pow(depthFiniteDifference1, 2)) * 100; //The Roberts cross operator is used in image processing and computer vision for edge detection
 	float depthThreshold = (1 / DepthSensitivity) * depthSamples[0];
 	edgeDepth = edgeDepth > depthThreshold ? 1 : 0;
 

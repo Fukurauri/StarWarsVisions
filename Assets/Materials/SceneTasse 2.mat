@@ -9,7 +9,8 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: SceneTasse 2
   m_Shader: {fileID: -6465566751694194690, guid: 0f817dfca6feb9046aae324c3b3adaf6, type: 3}
-  m_ShaderKeywords: BOOLEAN_94E6730C6FC34576A5FF924919C4CA35_ON
+  m_ShaderKeywords: BOOLEAN_94E6730C6FC34576A5FF924919C4CA35_ON BOOLEAN_980FEA6207504CDBBE36CA6C9AE2D161_ON
+    BOOLEAN_9864D523E4CD435493BCF169C18BBB50_ON BOOLEAN_C8DDEC944EC54556ABFF3336059A2916_ON
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -20,7 +21,11 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - Texture2D_094309993166483b9ba35a60bedeb367:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: f050874efacfc23419dcee155ae4fe95, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Texture2D_1:
+        m_Texture: {fileID: 2800000, guid: 50afa5eb1fc3bab49a0c744fcf7696bd, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - Texture2D_1a15ce880fe246a58ea649318f2eca77:
@@ -32,11 +37,11 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - Texture2D_7d64208eb4844ee484af19eee90c22c4:
-        m_Texture: {fileID: 2800000, guid: 45fd1f00fc9de4e4f8da167b78f5326a, type: 3}
+        m_Texture: {fileID: 2800000, guid: 864d5b002c30a1842b5ec95099353638, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - Texture2D_88c77e64463f4bd594d07c38269530bb:
-        m_Texture: {fileID: 2800000, guid: b3f247b26e080ca468f1daa963c192ee, type: 3}
+        m_Texture: {fileID: 2800000, guid: cce456ca362990c4b80556a8c600e72d, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - Texture2D_a14307bbff4b4335b4d06055fc16fb3b:
@@ -74,10 +79,11 @@ Material:
     m_Floats:
     - BOOLEAN_096FE174AC04409EA954683FE3D07093: 0
     - BOOLEAN_94E6730C6FC34576A5FF924919C4CA35: 1
-    - BOOLEAN_980FEA6207504CDBBE36CA6C9AE2D161: 0
-    - BOOLEAN_9864D523E4CD435493BCF169C18BBB50: 0
+    - BOOLEAN_980FEA6207504CDBBE36CA6C9AE2D161: 1
+    - BOOLEAN_9864D523E4CD435493BCF169C18BBB50: 1
+    - BOOLEAN_C8DDEC944EC54556ABFF3336059A2916: 1
     - Vector1_0bf06800e92644c8a9c19faf16ab8165: 3
-    - Vector1_12ab5088ba0343a7bbe0fb8f657ee7c9: 0.51
+    - Vector1_12ab5088ba0343a7bbe0fb8f657ee7c9: 0.55
     - Vector1_15fdc07540eb4c70be658bce3e8e197e: 5.3
     - Vector1_4cf58699ca0a4115bea9a0ab4abee9a7: 2
     - Vector1_63b26342f6e64838a8f4b6e193b27a7d: 0.629
@@ -87,8 +93,8 @@ Material:
     - Vector1_79fe9f56c361436c93b9ebff786ab642: 0.5
     - Vector1_8476f5e1b1f747798fdbe0ee78773766: 2
     - Vector1_870cd5d8dd5a407a8a621a681303639a: 0.7
-    - Vector1_8846870a86624979b816af5a40c101bc: 115
-    - Vector1_903A7FAB: 2.9
+    - Vector1_8846870a86624979b816af5a40c101bc: 90
+    - Vector1_903A7FAB: 2.65
     - Vector1_E39B1B65: 0.33
     - Vector1_adf73720cb5d4d5b9aefb4d1d141fa26: 0.5
     - Vector1_c550626b22024cfcaebe1c030f311550: 3.06
